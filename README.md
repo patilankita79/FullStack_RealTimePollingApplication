@@ -23,8 +23,8 @@ This is a full stack real time polling application. In this application the user
   - Create a public folder and create index.html inside public folder. Create the front-end form using materialize css
   - Create routes folder which will contain all the routes
   
-  **2. Front-end JavaScript**
-    - When user hits VOTE button, it needs to make request to backend ('/poll' endpoint) and pusher will trigger an event that we will subscribe to on front-end and we will get the points and OS that is submitted along with the message
+ **2. Front-end JavaScript**<br>
+   - When user hits VOTE button, it needs to make request to backend ('/poll' endpoint) and pusher will trigger an event that we will subscribe to on front-end and we will get the points and OS that is submitted along with the message
   
   
 <hr>
