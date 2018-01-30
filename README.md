@@ -9,7 +9,7 @@ This is a full stack real time polling application. In this application the user
 - After login, we are redirected to Pusher dashboard. Go to **Your apps** and **create a new app**, fill in all the details which    includes choice of technology for front-end and back-end. After creating an app, you can see all the required instructions.
 
 
-**1. Setting up the backend**
+**1. Setting up the backend with express, pusher, cors**
   - Generate the package.json with command => npm init
   - Install the following dependencies
     - express 
@@ -20,9 +20,11 @@ This is a full stack real time polling application. In this application the user
       - To let people from other domain make request without having issue
     - mongoose
   - Create app.js file with the command => touch app.js
-  - Create a public folder and create index.html inside public folder
+  - Create a public folder and create index.html inside public folder. Create the front-end form using materialize css
   - Create routes folder which will contain all the routes
-    
+  
+  **2. Front-end JavaScript**
+    - When user hits VOTE button, it needs to make request to backend ('/poll' endpoint) and pusher will trigger an event that we will subscribe to on front-end and we will get the points and OS that is submitted along with the message
   
   
 <hr>
