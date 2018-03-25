@@ -2,6 +2,8 @@
 This is a full stack real time polling application. In this application the user will see votes on the front-end as they come in, so user doesn't need to refresh the browser periodically. For front-end, Canvas JS is used to display the result in charts and for backend NodeJS and express are used. Pusher API is used for real time subscriptions. When a vote is submitted to the server through the form, Pusher will trigger the response and update the front-end i.e. result will displayed in charts.
 
 <hr>
+Pusher is used to build real time applications
+<hr>
 
 ### Step by step Approach
 
@@ -19,12 +21,16 @@ This is a full stack real time polling application. In this application the user
     - cors
       - To let people from other domain make request without having issue
     - mongoose
-  - Create app.js file with the command => touch app.js
+    
+    ```
+    npm install express body-parser pusher cors mongoose --save
+    ```
+  - Create app.js file with the command => touch app.js. In this, create basic express server
   - Create a public folder and create index.html inside public folder. Create the front-end form using materialize css
   - Create routes folder which will contain all the routes
   
  **2. Front-end JavaScript**<br>
-   - When user hits VOTE button, it needs to make request to backend ('/poll' endpoint) and pusher will trigger an event that we will subscribe to on front-end and we will get the points and OS that is submitted along with the message
+   - When user hits VOTE button, it needs to make request to backend ('/poll' endpoint) and pusher will trigger an event that will be subscribed to on front-end and we will get the points and OS that was submitted along with the message.
   
   
 <hr>
